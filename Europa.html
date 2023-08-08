@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lugares Turísticos na Europa</title>
+  <style>
+    /* Adicione estilos CSS aqui, se desejar */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0066cc;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      margin: 0;
+    }
+    nav {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    nav a:hover {
+      color: #ff9900;
+      transition: color 0.3s ease-in-out;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 30px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      padding: 20px;
+    }
+    h2 {
+      color: #0066cc;
+      margin-top: 0;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px auto;
+    }
+    p {
+      margin: 10px 0;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: #ff9900;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .btn-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #ff9900;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      display: none;
+      transition: background-color 0.3s ease-in-out;
+    }
+    .btn-top:hover {
+      background-color: #cc6600;
+    }
+    .useful-info {
+      background-color: #f9f9f9;
+      padding: 20px;
+      margin-top: 30px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .useful-info h3 {
+      color: #0066cc;
+      margin-top: 0;
+    }
+    .useful-info ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Lugares Turísticos na Europa</h1>
+    <p>Bem-vindo à Europa! O continente repleto de história, cultura e paisagens deslumbrantes. Explore conosco alguns dos lugares turísticos mais encantadores que a Europa tem a oferecer. De cidades icônicas a paisagens naturais deslumbrantes, aqui você encontrará uma variedade de destinos que irão cativar seus sentidos e deixar memórias inesquecíveis.</p>
+  </header>
+
+  <nav>
+    <a href="#paris">Paris</a>
+    <a href="#santorini">Santorini</a>
+    <a href="#roma">Roma</a>
+    <a href="#amsterda">Amsterdã</a>
+    <!-- Adicione mais destinos no menu de navegação conforme necessário -->
+  </nav>
+
+  <main>
+    <!-- Seções de destinos turísticos -->
+
+    <section class="useful-info">
+      <h3>Informações Úteis sobre a Europa</h3>
+      <p>A Europa é um continente rico em cultura, história e belezas naturais. Antes de viajar, confira algumas dicas úteis:</p>
+      <ul>
+        <li>Documentos Necessários: Verifique os requisitos de visto e passaporte para entrar nos países que você pretende visitar.</li>
+        <li>Moeda: A maioria dos países da União Europeia usa o Euro, mas alguns têm suas próprias moedas. Verifique a moeda do país que você visitará.</li>
+        <li>Idiomas: A Europa tem uma grande diversidade de idiomas. O inglês é amplamente falado, mas aprender algumas palavras básicas do idioma local pode ser útil.</li>
+        <li>Transporte: Utilize o eficiente sistema de transporte público da Europa para se locomover nas cidades. Trens e ônibus são opções populares para viagens entre países.</li>
+        <li>Gastronomia: Experimente as delícias culinárias de cada país, pois a Europa é famosa por sua comida saborosa e variada.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contato: contato@europatravel.com</p>
+    <p>&copy; 2023 Europa Travel</p>
+  </footer>
+
+  <button class="btn-top" onclick="topFunction()">Voltar ao Topo</button>
+
+  <script>
+    // Botão para voltar ao topo da página
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    // Exibir o botão de voltar ao topo quando o usuário rolar a página
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.querySelector(".btn-top").style.display = "block";
+      } else {
+        document.querySelector(".btn-top").style.display = "none";
+      }
+    }
+  </script>
+</body>
+
+</html>
